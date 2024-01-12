@@ -26,8 +26,10 @@
 		</MobileLink>
 		<div class="my-4 h-[calc(100vh-8rem)] overflow-auto pb-10 pl-6">
 			<div class="flex flex-col space-y-3">
-				<h4 class="font-medium">Navigation</h4>
-				<MobileLink href="/projects" class="" bind:open>Projects</MobileLink>
+				<h4 class="font-medium">Projects</h4>
+				<MobileLink href="/projects/gewoonhout" class="pl-4" bind:open>geWOONhout</MobileLink>
+                <MobileLink href="/projects/koopmans" class="pl-4" bind:open>Koopmans</MobileLink>
+                <MobileLink href="/projects/nijhuis" class="pl-4" bind:open>Nijhuis Riool</MobileLink>
                 <MobileLink href="/Nomeon Terms & Conditions.pdf" download="Nomeon Terms & Conditions.pdf" class="" bind:open>Terms & Conditions</MobileLink>
 				<MobileLink href="/contact" class="" bind:open>Contact</MobileLink>
 			</div>

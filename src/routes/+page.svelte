@@ -1,68 +1,12 @@
 <script lang='ts'>
 	import { buttonVariants } from "$lib/components/ui/button";
 	import { cn } from "$lib/utils";
-	import { onMount } from "svelte";
-    import {
-        DirectionalLight,
-        HemisphereLight,
-        Mesh,
-        PerspectiveCamera,
-        Scene,
-        WebGLRenderer
-    } from 'three';
-    // @ts-ignore
-    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import ThreeScene from "$lib/components/three-scene.svelte";
     import Icon from '@iconify/svelte';
 
     let canvas: HTMLCanvasElement;
-    let camera: PerspectiveCamera;
-    let renderer: WebGLRenderer;
-    let mesh: Mesh;
     let width: number;
     let height: number;
-
-    onMount(() => {
-        const scene = new Scene();
-        camera = new PerspectiveCamera( 50, width / height, 0.1, 1000 );
-        camera.position.y = 19;
-        camera.position.z = 35;
-        camera.rotateX(-0.3);
-
-        renderer = new WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
-        renderer.setSize( width, height );
-
-        const loader = new GLTFLoader();
-        loader.load( '/Factory.glb', function ( gltf: any ) {
-            mesh = gltf.scene;
-            mesh.scale.set(0.029, 0.029, 0.029);
-            mesh.rotateY(3 * Math.PI/4);
-            scene.add( mesh );
-        }, undefined, function ( error: any ) {
-            console.error( error );
-        } );
-
-        const directionalLight = new DirectionalLight(0xffffff);
-        scene.add(directionalLight);
-
-        const hemisphereLight = new HemisphereLight(0xffffff, 0x444444);
-        hemisphereLight.position.set(1, 1, 1);
-        scene.add(hemisphereLight);
-
-
-        function animate() {
-            requestAnimationFrame( animate );
-            mesh.rotateY(0.001);
-            renderer.render( scene, camera );
-        }
-
-        animate();
-    });
-
-    function resize() {
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
-        renderer.setSize( width, height );
-    }
 </script>
 
 <div class='container relative flex md:flex-row flex-col gap-2'>
@@ -75,7 +19,7 @@
         </div>
     </div>
     <div class='md:w-1/2 w-full min-h-80 md:min-h-0' bind:clientHeight={height} bind:clientWidth={width}>
-        <canvas bind:this={canvas} {height} {width}  />
+        <ThreeScene {canvas} {width} {height} />
     </div>
 </div>
 <div class='flex flex-col md:flex-row container relative px-8 md:py-16 py-8 gap-8 md:gap-16 md:items-start'>
@@ -104,4 +48,3 @@
         </div>
     </section>
 </div>
-<svelte:window on:resize={resize} />
