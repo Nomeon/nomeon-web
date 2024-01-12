@@ -28,7 +28,7 @@
         renderer.setSize(width, height);
 
         const loader = new GLTFLoader();
-        loader.load('/Factory.glb', function (gltf: any) {
+        loader.load("/Factory.glb", function (gltf: any) {
             mesh = gltf.scene;
             mesh.scale.set(0.029, 0.029, 0.029);
             mesh.rotateY(3 * Math.PI / 4);
@@ -36,7 +36,6 @@
         }, undefined, function (error) {
             console.error(error);
         });
-
         const directionalLight = new DirectionalLight(0xffffff);
         scene.add(directionalLight);
 
