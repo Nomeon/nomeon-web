@@ -18,15 +18,16 @@
 		>
 			Projects
 		</a>
-        <a
-        href="/Nomeon Terms & Conditions.pdf" download
-        class={cn(
-            'transition-colors hover:text-foreground/80',
-            $page.url.pathname.startsWith('/terms') ? 'text-foreground' : 'text-foreground/60'
-        )}
-        >
-        Terms & Conditions
-        </a>
+		<a
+			href="/Nomeon Terms & Conditions.pdf"
+			download
+			class={cn(
+				'transition-colors hover:text-foreground/80',
+				$page.url.pathname.startsWith('/terms') ? 'text-foreground' : 'text-foreground/60'
+			)}
+		>
+			Terms & Conditions
+		</a>
 		<a
 			href="/contact"
 			class={cn(
@@ -36,6 +37,5 @@
 		>
 			Contact
 		</a>
-
 	</nav>
 </div>

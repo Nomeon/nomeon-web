@@ -1,1 +1,1 @@
-<h1 class=''>Coming soon!</h1>
+<h1 class="">Coming soon!</h1>
