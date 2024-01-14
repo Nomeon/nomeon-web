@@ -30,7 +30,7 @@
 		bind:clientHeight={height}
 		bind:clientWidth={width}
 	>
-		<ThreeScene {canvas} {width} {height} />
+        <ThreeScene {canvas} {width} {height} />	
 	</div>
 </div>
 <div

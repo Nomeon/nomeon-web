@@ -9,6 +9,7 @@
 		WebGLRenderer
 	} from 'three';
 	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+	import { Skeleton } from '$lib/components/ui/skeleton';
 
 	export let canvas: HTMLCanvasElement;
 	export let width: number;
@@ -18,9 +19,10 @@
 	let camera: PerspectiveCamera;
 	let scene: Scene;
 	let mesh: Mesh;
+    let loading: boolean = true;
 
 	onMount(() => {
-		createScene();
+        createScene();
 		animate();
 	});
 
@@ -63,6 +65,7 @@
 		if (mesh) {
 			mesh.rotateY(0.001);
 		}
+        loading = false;
 		renderer.render(scene, camera);
 	}
 
@@ -73,5 +76,10 @@
 	}
 </script>
 
+{#if loading}
+    <div class='w-full h-full p-4'>
+        <Skeleton class='w-full h-full rounded-sm' />
+    </div>
+{/if}
 <canvas bind:this={canvas} />
 <svelte:window on:resize={resize} />
