@@ -9,9 +9,8 @@
 				<img src="/favicon.svg" alt="Nomeon" class="h-4 w-4 {$mode === 'light' ? '' : 'invert'}" />
 			</a>
 			<p class="text-center text-sm leading-loose text-muted-foreground md:text-left">
-				Built & designed by me. Coded in <a class="text-primary" href="https://kit.svelte.dev/"
-					>Sveltekit</a
-				>, deployed on <a href="https://vercel.com/" class="text-primary">Vercel</a>.
+				Built using <a class="text-primary" href="https://kit.svelte.dev/">Sveltekit </a>and
+				<a href="https://vercel.com/" class="text-primary">Vercel</a>, all by me.
 			</p>
 		</div>
 		<div>

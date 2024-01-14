@@ -19,10 +19,10 @@
 	let camera: PerspectiveCamera;
 	let scene: Scene;
 	let mesh: Mesh;
-    let loading: boolean = true;
+	let loading: boolean = true;
 
 	onMount(() => {
-        createScene();
+		createScene();
 		animate();
 	});
 
@@ -65,7 +65,7 @@
 		if (mesh) {
 			mesh.rotateY(0.001);
 		}
-        loading = false;
+		loading = false;
 		renderer.render(scene, camera);
 	}
 
@@ -77,9 +77,9 @@
 </script>
 
 {#if loading}
-    <div class='w-full h-full p-4'>
-        <Skeleton class='w-full h-full rounded-sm' />
-    </div>
+	<div class="h-full w-full p-4">
+		<Skeleton class="h-full w-full rounded-sm" />
+	</div>
 {/if}
 <canvas bind:this={canvas} />
 <svelte:window on:resize={resize} />
