@@ -17,7 +17,7 @@
             <p
                 class="text-center text-sm leading-loose text-muted-foreground md:text-left"
             >
-            Built & designed by me.
+            Built & designed by me. Coded in <a class="text-primary" href="https://kit.svelte.dev/">Sveltekit</a>, deployed on <a href="https://vercel.com/" class="text-primary">Vercel</a>.
             </p>
         </div>
         <div>

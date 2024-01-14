@@ -5,7 +5,7 @@
 </script>
 
 <ModeWatcher />
-<div class="relative flex min-h-[101dvh] flex-col bg-gradient-to-br from-primary-foreground to-accent" id="page">
+<div class="relative flex min-h-[100dvh] flex-col bg-gradient-to-br from-primary-foreground to-accent" id="page">
 	<SiteHeader />
 	<div class="flex-1">
 		<slot />
