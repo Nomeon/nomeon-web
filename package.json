@@ -41,6 +41,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/speed-insights": "^1.0.3",
 		"clsx": "^2.1.0",
 		"formsnap": "^0.4.2",
 		"mode-watcher": "^0.1.2",
