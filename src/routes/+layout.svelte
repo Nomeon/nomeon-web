@@ -2,9 +2,9 @@
 	import '../app.pcss';
 	import { ModeWatcher } from 'mode-watcher';
 	import { SiteHeader, SiteFooter, MetaData } from '$lib/components';
-	// import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
-	// injectSpeedInsights();
+	injectSpeedInsights();
 </script>
 
 <ModeWatcher />
