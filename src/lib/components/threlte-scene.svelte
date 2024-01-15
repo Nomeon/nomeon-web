@@ -31,7 +31,7 @@
 	const component = forwardEventHandlers();
 
 	let width: number;
-	let rotation = 0;
+	let rotation = 3;
 	useTask((delta) => {
 		rotation += delta * 0.25;
 	});
@@ -52,7 +52,7 @@
 				<OrbitControls enableDamping enableZoom={false} />
 			{/if}
 		</T.PerspectiveCamera>
-		<T.AmbientLight intensity={1.2} />
+		<T.AmbientLight intensity={1.5} />
 		<T.Mesh
 			scale={0.011}
 			rotation.y={rotation}
