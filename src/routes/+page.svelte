@@ -1,12 +1,9 @@
 <script lang="ts">
 	import { buttonVariants } from '$lib/components/ui/button';
 	import { cn } from '$lib/utils';
-	import ThreeScene from '$lib/components/three-scene.svelte';
+	import { Canvas } from '@threlte/core';
+	import { ThrelteScene } from '$lib/components';
 	import Icon from '@iconify/svelte';
-
-	let canvas: HTMLCanvasElement;
-	let width: number;
-	let height: number;
 </script>
 
 <div class="container relative flex flex-col gap-2 md:flex-row">
@@ -25,12 +22,10 @@
 			<a href="/contact" class={cn(buttonVariants({ variant: 'outline' }))}> Contact me </a>
 		</div>
 	</div>
-	<div
-		class="min-h-80 w-full md:min-h-0 md:w-1/2"
-		bind:clientHeight={height}
-		bind:clientWidth={width}
-	>
-		<ThreeScene {canvas} {width} {height} />
+	<div class="min-h-80 w-full md:min-h-0 md:w-1/2">
+		<Canvas>
+			<ThrelteScene />
+		</Canvas>
 	</div>
 </div>
 <div

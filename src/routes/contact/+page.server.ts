@@ -19,24 +19,24 @@ export const actions: Actions = {
 			});
 		}
 
-        const transporter = nodemailer.createTransport({
-            host: MAIL_HOST,
-            port: 465,
-            secure: true,
-            auth: {
-                type: "LOGIN",
-                user: MAIL_SENDER,
-                pass: MAIL_PASS
-            }
-        })
-        const sendMail = await transporter.sendMail({
-            from: `Contactform Nomeon <${MAIL_SENDER}>`,
-            to: MAIL_USER,
-            subject: `${form.data.name} via contactform`,
-            text: `Naam: ${form.data.name}\nEmail: ${form.data.email}\nBericht: ${form.data.message}`
-        })
-        console.log(sendMail.messageId)
-        transporter.close()
+		const transporter = nodemailer.createTransport({
+			host: MAIL_HOST,
+			port: 465,
+			secure: true,
+			auth: {
+				type: 'LOGIN',
+				user: MAIL_SENDER,
+				pass: MAIL_PASS
+			}
+		});
+		const sendMail = await transporter.sendMail({
+			from: `Contactform Nomeon <${MAIL_SENDER}>`,
+			to: MAIL_USER,
+			subject: `${form.data.name} via contactform`,
+			text: `Naam: ${form.data.name}\nEmail: ${form.data.email}\nBericht: ${form.data.message}`
+		});
+		console.log(sendMail.messageId);
+		transporter.close();
 
 		return {
 			form
