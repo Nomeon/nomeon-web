@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { buttonVariants } from '$lib/components/ui/button';
-    import { Separator } from '$lib/components/ui/separator';
+	import { Separator } from '$lib/components/ui/separator';
 	import { cn } from '$lib/utils';
 	import { Canvas } from '@threlte/core';
 	import { ThrelteScene } from '$lib/components';
@@ -35,7 +35,7 @@
 	<section id="story" class="flex w-full flex-col justify-center">
 		<h1 class="w-full pb-2 text-2xl">My background</h1>
 		<Separator orientation="horizontal" />
-        <div id="info" class="pt-4">
+		<div id="info" class="pt-4">
 			<p class="text-muted-foreground">
 				After graduating in Business & IT at the University of Twente, I found my groove: coming up
 				with smart solutions that fit just right with the company. My goal? Making things simpler
@@ -57,7 +57,7 @@
 	<section id="coding" class="flex w-full flex-col justify-center">
 		<h1 class="w-full pb-2 text-2xl">Two languages</h1>
 		<Separator orientation="horizontal" />
-        <div id="info" class="pt-4">
+		<div id="info" class="pt-4">
 			<p class="text-muted-foreground">
 				In the dynamic landscape of Business & IT, two distinct languages often emerge: the
 				strategic voice of business and the technical dialect of IT. Bridging the gap between these
