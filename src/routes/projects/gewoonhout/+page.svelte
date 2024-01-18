@@ -7,11 +7,11 @@
 	<div slot="challenge" class="p-2">
 		<p>
 			At geWOONhout, work planners were spending a lot of time extracting data from the 3D (IFC)
-			Models. Components of several buildings had to be manually entered into multiple Excel sheet,
-			taking multiple days per project.
+			Models. Components of several buildings had to be manually entered into multiple Excel sheets,
+			taking several days per project.
 		</p>
 		<p>
-			This significantly decreased their producticity, while simultaneously increasing the potential of human
+			This significantly decreased their productivity, while simultaneously increasing the potential of human
 			error.
 		</p>
 	</div>
@@ -31,7 +31,7 @@
 			</li>
 			<li class="flex items-center gap-2 pb-2">
 				<Icon icon="mdi:check" class="h-6 w-6 text-primary min-w-[1rem]" />
-				<span> Reduced the room for human error, as the data is extracted automatically. </span>
+				<span> Reduced the chance of human error, as the data is extracted automatically. </span>
 			</li>
 			<li class="flex items-center gap-2 pb-2">
 				<Icon icon="mdi:check" class="h-6 w-6 text-primary min-w-[1rem]" />
