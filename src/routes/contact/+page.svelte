@@ -1,15 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import SettingsForm from './settings-form.svelte';
-	import { superForm } from 'sveltekit-superforms/client';
+	import { ContactForm } from '$lib/components/contact';
 	export let data: PageData & { form: any };
-
-	// const { form, message } = superForm(data.form);
-	// $: if (message) {
-	//     console.log($message);
-	// }
-
-	// https://superforms.rocks/concepts/messages Check if works with this.
 </script>
 
 <div class="container relative mb-8 flex flex-col gap-2 md:flex-row">
@@ -26,6 +18,6 @@
 </div>
 <div class="container relative">
 	<div class="m-auto max-w-6xl overflow-hidden rounded-[0.5rem] border bg-background p-4 shadow-xl">
-		<SettingsForm form={data.form} />
+		<ContactForm form={data.form} />
 	</div>
 </div>

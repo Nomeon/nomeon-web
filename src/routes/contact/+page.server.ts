@@ -1,7 +1,7 @@
 import type { PageServerLoad, Actions } from './$types';
 import { fail } from '@sveltejs/kit';
-import { superValidate } from 'sveltekit-superforms/server';
-import { formSchema } from './schema';
+import { message, superValidate } from 'sveltekit-superforms/server';
+import { formSchema } from '../../lib/components/contact/schema';
 import nodemailer from 'nodemailer';
 import { MAIL_HOST, MAIL_USER, MAIL_PASS, MAIL_SENDER } from '$env/static/private';
 
@@ -35,11 +35,9 @@ export const actions: Actions = {
 			subject: `${form.data.name} via contactform`,
 			text: `Naam: ${form.data.name}\nEmail: ${form.data.email}\nBericht: ${form.data.message}`
 		});
-		console.log(sendMail.messageId);
+		// console.log(sendMail.messageId);
 		transporter.close();
 
-		return {
-			form
-		};
+		return message(form, 'Your message has been received!');
 	}
 };

@@ -11,8 +11,8 @@
 			taking several days per project.
 		</p>
 		<p>
-			This significantly decreased their productivity, while simultaneously increasing the potential of human
-			error.
+			This significantly decreased their productivity, while simultaneously increasing the potential
+			of human error.
 		</p>
 	</div>
 	<div slot="solution" class="p-2">
@@ -26,15 +26,15 @@
 	<div slot="result" class="p-2">
 		<ul>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 text-primary min-w-[1rem]" />
+				<Icon icon="mdi:check" class="h-6 w-6 min-w-[1rem] text-primary" />
 				<span> Increased productivity, converting a 3-day job into the press of a button. </span>
 			</li>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 text-primary min-w-[1rem]" />
+				<Icon icon="mdi:check" class="h-6 w-6 min-w-[1rem] text-primary" />
 				<span> Reduced the chance of human error, as the data is extracted automatically. </span>
 			</li>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 text-primary min-w-[1rem]" />
+				<Icon icon="mdi:check" class="h-6 w-6 min-w-[1rem] text-primary" />
 				<span>
 					Optimized workflow, as faulty components in the IFC models are detected earlier in the
 					process.

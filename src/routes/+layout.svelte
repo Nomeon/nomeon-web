@@ -8,10 +8,12 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import { SiteHeader, SiteFooter, MetaData } from '$lib/components';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	import { Toaster } from '$lib/components/ui/sonner';
 
 	injectSpeedInsights();
 </script>
 
+<Toaster />
 <ModeWatcher />
 <MetaData />
 <div

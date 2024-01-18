@@ -2,10 +2,24 @@
 	import * as Form from '$lib/components/ui/form';
 	import { formSchema, type FormSchema } from './schema';
 	import type { SuperValidated } from 'sveltekit-superforms';
+	import MessageAlert from './message-alert.svelte';
+	import { toast } from 'svelte-sonner';
 	export let form: SuperValidated<FormSchema>;
 </script>
 
-<Form.Root method="POST" {form} schema={formSchema} let:config>
+<Form.Root
+	method="POST"
+	{form}
+	schema={formSchema}
+	options={{
+		onSubmit: () => {
+			toast.loading('Loading...');
+		},
+		resetForm: true,
+		clearOnSubmit: 'errors-and-message'
+	}}
+	let:config
+>
 	<Form.Field {config} name="name">
 		<Form.Item>
 			<Form.Label>Name</Form.Label>
@@ -29,4 +43,5 @@
 		</Form.Item>
 	</Form.Field>
 	<Form.Button class="mt-4">Submit</Form.Button>
+	<MessageAlert />
 </Form.Root>
