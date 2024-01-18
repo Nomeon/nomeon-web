@@ -11,7 +11,7 @@
 			taking multiple days per project.
 		</p>
 		<p>
-			This significantly decreased their producticity, while also increasing the room for human
+			This significantly decreased their producticity, while simultaneously increasing the potential of human
 			error.
 		</p>
 	</div>
@@ -20,21 +20,21 @@
 			I've developed an easy-to-use Python tool which loads the IFC models, checks and extracts the
 			data, and transforms this data into several different CSV files. These CSV files are
 			customized according to the specification of the milling companies. In addition, a report can
-			be generated for the 3D modellers which states the errors that have corrected.
+			be generated for the 3D modellers which indicates the errors that have to be solved.
 		</p>
 	</div>
 	<div slot="result" class="p-2">
 		<ul>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 text-primary" />
+				<Icon icon="mdi:check" class="h-6 w-6 text-primary min-w-[1rem]" />
 				<span> Increased productivity, converting a 3-day job into the press of a button. </span>
 			</li>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 text-primary" />
+				<Icon icon="mdi:check" class="h-6 w-6 text-primary min-w-[1rem]" />
 				<span> Reduced the room for human error, as the data is extracted automatically. </span>
 			</li>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 text-primary" />
+				<Icon icon="mdi:check" class="h-6 w-6 text-primary min-w-[1rem]" />
 				<span>
 					Optimized workflow, as faulty components in the IFC models are detected earlier in the
 					process.

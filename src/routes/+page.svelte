@@ -66,7 +66,7 @@
 				technically robust.
 			</p>
 			<p class="mt-4 text-muted-foreground">
-				When the off-the-shelf solutions fall short, I take a proactive approach. I create custom
+				When off-the-shelf solutions fall short, I take a proactive approach. I create custom
 				software that fits; whether it's to transform data, run detailed production simulations, or
 				connecting two existing software systems.
 			</p>
