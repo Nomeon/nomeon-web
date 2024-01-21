@@ -26,15 +26,15 @@
 	<div slot="result" class="p-2">
 		<ul>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 min-w-[1rem] text-primary" />
+				<Icon icon="mdi:check" class="min-h-4 min-w-4 text-primary" />
 				<span> Increased productivity, converting a 3-day job into the press of a button. </span>
 			</li>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 min-w-[1rem] text-primary" />
+				<Icon icon="mdi:check" class="min-h-4 min-w-4 text-primary" />
 				<span> Reduced the chance of human error, as the data is extracted automatically. </span>
 			</li>
 			<li class="flex items-center gap-2 pb-2">
-				<Icon icon="mdi:check" class="h-6 w-6 min-w-[1rem] text-primary" />
+				<Icon icon="mdi:check" class="min-h-4 min-w-4 text-primary" />
 				<span>
 					Optimized workflow, as faulty components in the IFC models are detected earlier in the
 					process.

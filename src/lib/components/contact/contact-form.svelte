@@ -16,7 +16,8 @@
 			toast.loading('Loading...');
 		},
 		resetForm: true,
-		clearOnSubmit: 'errors-and-message'
+		clearOnSubmit: 'errors-and-message',
+		multipleSubmits: 'prevent'
 	}}
 	let:config
 >
