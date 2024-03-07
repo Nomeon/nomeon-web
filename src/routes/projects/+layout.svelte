@@ -24,7 +24,7 @@
 	</div>
 </div>
 
-<div class="container relative">
+<div class="container relative pb-16">
 	<div class="relative">
 		<div class="lg:max-w-none">
 			<!-- TODO: replace with srollarea component when it's ready -->

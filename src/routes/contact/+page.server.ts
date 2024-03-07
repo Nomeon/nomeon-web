@@ -1,7 +1,7 @@
 import type { PageServerLoad, Actions } from './$types';
 import { fail } from '@sveltejs/kit';
 import { message, superValidate } from 'sveltekit-superforms/server';
-import { formSchema } from '../../lib/components/contact/schema';
+import { formSchema } from '$lib/components/contact/schema';
 import nodemailer from 'nodemailer';
 import { MAIL_HOST, MAIL_USER, MAIL_PASS, MAIL_SENDER } from '$env/static/private';
 

@@ -16,7 +16,7 @@
 		</h2>
 	</div>
 </div>
-<div class="container relative">
+<div class="container relative pb-16">
 	<div class="m-auto max-w-6xl overflow-hidden rounded-[0.5rem] border bg-background p-4 shadow-xl">
 		<ContactForm form={data.form} />
 	</div>
