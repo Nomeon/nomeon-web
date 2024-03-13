@@ -27,7 +27,7 @@
 			</div>
 			<nav class="flex items-center">
 				<a
-					href="https://www.linkedin.com/in/stijn-nijhuis-56593524a/"
+					href="https://www.linkedin.com/in/stijn-nijhuis"
 					target="_blank"
 					rel="noreferrer"
 				>
