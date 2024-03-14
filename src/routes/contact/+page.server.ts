@@ -35,7 +35,6 @@ export const actions: Actions = {
 			subject: `${form.data.name} via contactform`,
 			text: `Naam: ${form.data.name}\nEmail: ${form.data.email}\nBericht: ${form.data.message}`
 		});
-		// console.log(sendMail.messageId);
 		transporter.close();
 
 		return message(form, 'Your message has been received!');
