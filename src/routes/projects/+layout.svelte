@@ -1,10 +1,23 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { buttonVariants } from '$lib/components/ui/button';
 	import { cn } from '$lib/utils';
+	import { ProjectNav } from '$lib/components/nav';
+	import { buttonVariants } from '$lib/components/ui/button';
+	import { ScrollArea } from '$lib/components/ui/scroll-area';
 
-	let className: string | undefined | null = undefined;
-	export { className as class };
+	const projectItems = [
+		{
+			title: 'geWOONhout',
+			href: '/projects/gewoonhout'
+		},
+		{
+			title: 'Koopmans',
+			href: '/projects/koopmans'
+		},
+		{
+			title: 'Nijhuis',
+			href: '/projects/nijhuis'
+		}
+	]
 </script>
 
 <div class="container relative flex flex-col gap-2 md:flex-row">
@@ -27,51 +40,9 @@
 <div class="container relative pb-16">
 	<div class="relative">
 		<div class="lg:max-w-none">
-			<!-- TODO: replace with srollarea component when it's ready -->
-			<div
-				class={cn('mb-4 flex items-center overflow-y-auto pb-3 md:pb-0', className)}
-				{...$$restProps}
-			>
-				<a
-					href="/projects/gewoonhout"
-					data-sveltekit-noscroll
-					class={cn(
-						'flex h-7 items-center justify-center rounded-full px-4 text-center text-sm font-medium transition-colors hover:text-primary',
-						$page.url.pathname.startsWith('/projects/gewoonhout') ||
-							$page.url.pathname === '/projects/gewoonhout'
-							? 'bg-muted  text-primary'
-							: 'text-muted-foreground'
-					)}
-				>
-					geWOONhout
-				</a>
-				<a
-					href="/projects/koopmans"
-					data-sveltekit-noscroll
-					class={cn(
-						'flex h-7 items-center justify-center rounded-full px-4 text-center text-sm font-medium transition-colors hover:text-primary',
-						$page.url.pathname.startsWith('/projects/koopmans') ||
-							$page.url.pathname === '/projects/koopmans'
-							? 'bg-muted  text-primary'
-							: 'text-muted-foreground'
-					)}
-				>
-					Koopmans
-				</a>
-				<a
-					href="/projects/nijhuis"
-					data-sveltekit-noscroll
-					class={cn(
-						'flex h-7 items-center justify-center rounded-full px-4 text-center text-sm font-medium transition-colors hover:text-primary',
-						$page.url.pathname.startsWith('/projects/nijhuis') ||
-							$page.url.pathname === '/projects/nijhuis'
-							? 'bg-muted  text-primary'
-							: 'text-muted-foreground'
-					)}
-				>
-					Nijhuis
-				</a>
-			</div>
+			<ScrollArea class="mb-4 rounded-md" orientation='horizontal'>
+				<ProjectNav items={projectItems} class="mb-4" />
+			</ScrollArea>
 		</div>
 	</div>
 	<div class="overflow-hidden rounded-[0.5rem] border bg-background p-4 shadow-xl">
