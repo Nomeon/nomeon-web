@@ -2,7 +2,7 @@
 	import { cn } from '$lib/utils';
 	import { ModeToggle } from '$lib/components';
 	import { MainNav, MobileNav } from '$lib/components/nav';
-	import { LinkedinLogo } from 'radix-icons-svelte';
+	import LinkedinLogo from 'svelte-radix/LinkedinLogo.svelte';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import { mode } from 'mode-watcher';
 </script>

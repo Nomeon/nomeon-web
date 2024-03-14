@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as Sheet from '$lib/components/ui/sheet';
-	import { HamburgerMenu } from 'radix-icons-svelte';
+	import HamburgerMenu from 'svelte-radix/HamburgerMenu.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import SheetContent from '../ui/sheet/sheet-content.svelte';
 	import { mode } from 'mode-watcher';
